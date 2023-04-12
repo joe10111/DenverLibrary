@@ -30,6 +30,7 @@ namespace DenverLibrary
         public List<string> AllBooks()
         {
             var authors = new List<string>();
+
             foreach (var branch in Branches)
             {
                 foreach (var book in branch.Books)
@@ -37,6 +38,7 @@ namespace DenverLibrary
                     authors.Add(book.Title);
                 }
             }
+
             return authors;
         }
     }

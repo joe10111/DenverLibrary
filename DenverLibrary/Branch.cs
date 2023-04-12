@@ -20,10 +20,12 @@ namespace DenverLibrary
         public List<string> AllAuthors()
         {
             var authors = new List<string>();
+
             foreach (var book in Books)
             {
                 authors.Add(book.Author);
             }
+
             return authors;
         }
     }
